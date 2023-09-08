@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Define different chat scenarios and their responses
     const chatScenarios = {
-      "hi": "Hi, I'm a ChaitanyaGPT , Made by Sajeed",
+      "hi": "Hi, I'm a ChaitanyaGPT , Made by Sajeed and Srinivas",
       "hello": "Hi there!",
       "how are you?": "I'm just a chatbot, but I'm doing well. How can I assist you?",
       "what's the weather like today?": "I'm sorry, I don't have access to real-time weather information.",
