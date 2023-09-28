@@ -1,31 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>ChatGPT(with HTML,CSS and JavaScript)</title>
-<link rel="stylesheet" href="styleGPT.css" />
+<meta charset="utf-8" />
+<link rel="stylesheet" href="weather.css" />
+<title>My Weather App</title>
 </head>
 <body>
-<section class="sidebar">
- <button >New chat</button>
- <div class="history"></div>
-  <nav>
-   <p>Made by Sajeed Ballur and Srinivas P B</p>
-   </nav>
-</section>
-<section class="main">
- <h1>ChaitanyaGPT</h1>
- <p id="output"></p>
- <div class="bottom-section">
-  <div class="input-container">
-   <input placeholder="Send a message"/>
-   <div id="submit">➢</div>
-  </div> 
- </div>
- <p class="info" >It's a chatGPT clone developed by Sajeed Ballur,Technology used HTML,CSS and JavaScript,
- I created this chatbot using only from language's No API's NO any frameworks,It's Just a basic and simple chatbot</p>
-</section>
-<script type="text/javascript" src="GPT.js">
+<div class="container">
+   <div class="weatherInfo">
+   <div class="search">
+    <input type="text" id="searchCity" placeholder="Search The City Name" class="bold-placeholder" />  
+    <div id="submit"><button>➢</button></div> 
+   </div>
+   <div class="error">
+   <p>Invalid City Name</p>
+   </div>
+   <div class="weather">
+   <div class="city">
+     <h1 id="city">Bangalore</h1>   
+   </div>
+   <div class="temperature">
+    <h2 id="tmp">30°C</h2>   
+   </div>
+   <div class="condition">
+ <h2 > <img id="cdtn" src="file:///home/ballursajeed/.cache/.fr-KA23B2/images/clear.png" alt=""></h2>   
+
+   </div>
+   <div class="details">
+      <div class="humidity">
+       <img src="file:///home/ballursajeed/.cache/.fr-47GBC2/images/humidity.png" alt="">       
+        <p>Humidity : </p><p id="hmd"> 59%</p>
+   </div>
+      <div class="wind">
+       <img src="file:///home/ballursajeed/.cache/.fr-LSRXB2/images/wind.png" alt="">        
+         <p>Wind Speed : </p><p id="windSpeed"> 6Km/h</p>  
+   </div>
+   </div>
+   </div>
+   </div>
+</div>
+
+<script type="text/javascript" src="weather.js">
+
 </script>
 </body>
 </html>
